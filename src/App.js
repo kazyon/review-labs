@@ -1,15 +1,22 @@
-import Test1 from "./components/test1";
+import {Route} from 'react-router-dom';
 
+import AllClientsPage from './pages/AllClients';
+import NewClientsPage from './pages/NewClient';
+import FavoritesPage from './pages/Favorites';
 
 function App() {
-  return (
-  <div>
-    <h1>My todos</h1>
-    <Test1 text= 'test1'/> 
-    <Test1 text= 'test2'/> 
-    <Test1 text= 'test3'/> 
-  </div>
-  );
+  return <div>
+    <Route path = '/'>
+      <AllClientsPage />
+    </Route>
+    <Route path = '/new-client'>
+      <NewClientsPage />
+    </Route>
+    <Route path = '/favorites'>
+      <FavoritesPage /> 
+    </Route>
+  </div>;
+  
 }
 
 export default App;
