@@ -3,7 +3,7 @@ import type { AppProps } from 'next/app'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return <div> <Component {...pageProps} /> <footer>
-    <p>2022 Dragos</p>
+    <p>Footer</p>
   </footer>
   </div>
 }

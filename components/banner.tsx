@@ -8,7 +8,9 @@
             <span className={styles.title2}>Labs</span>
         </h1>
         <p className={styles.subTitle}>Discover what people think about all products!</p>
-        <button className={styles.button} onClick={props.handleOnClick}>{props.buttonText}</button>
+        <div className={styles.buttonWrapper}>
+            <button className={styles.button} onClick={props.handleOnClick}>{props.buttonText}</button>
+        </div> 
     </div>
     );
  };
